@@ -14,7 +14,7 @@ def list_courses():
 def get_course_selection():
     while True:
         try:
-            choice = int(input("\nEnter the number of the course you'd like to play: "))
+            choice = int(input("\nEnter the name of the course you'd like to play: "))
             if 1 <= choice <= len(golf_courses):
                 return list(golf_courses.keys())[choice - 1]
             else:
